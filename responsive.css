@@ -1,0 +1,53 @@
+.container {
+    width: 100%;
+    max-width: 1367px;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+.module {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #E5E7E9;
+}
+
+.module:before,
+.module:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    width: calc(20% - 10px);
+    float: left;
+}
+
+@media screen and (max-width: 1280px) {
+    .card {
+        width: calc(25% - 10px);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .card {
+        width: calc(33.33% - 10px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 5px;
+    }
+
+    .card {
+        width: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .card {
+        width: calc(100% - 10px);
+    }
+}
