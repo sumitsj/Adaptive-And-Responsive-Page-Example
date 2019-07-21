@@ -1,0 +1,61 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.module {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #E5E7E9;
+}
+
+.module:before,
+.module:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    width: 225px;
+    float: left;
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        width: 991px;
+    }
+    .card {
+        width: 313px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        width: 768px;
+    }
+
+    .card {
+        width: 364px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 640px;
+    }
+
+    .card {
+        width: 610px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 375px;
+    }
+
+    .card {
+        width: 345px;
+    }
+}
